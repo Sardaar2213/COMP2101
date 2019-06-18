@@ -11,7 +11,17 @@
 ###############
 # Variables   #
 ###############
-title="President"
+######for in
+
+titles=("Football Player" "Astronaut" "King kong" "Director" "CEO" "Student" "Tarzen" )
+
+#echo "$title=${titles[$title_index]}"
+title_index=$(($RANDOM % ${#titles[@]}))
+#do
+#        echo "I'm  $title_index"
+#done
+title=${titles[$title_index]}
+#title="President"
 hostname=$(hostname)
 date=$(date +'%I:%M %p')
 weekday=$(date +%u)
